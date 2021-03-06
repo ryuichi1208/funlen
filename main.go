@@ -7,8 +7,8 @@ import (
 	"reflect"
 )
 
-const defaultLineLimit = 60
-const defaultStmtLimit = 40
+const defaultLineLimit = 120
+const defaultStmtLimit = 80
 
 // Run runs this linter on the provided code
 func Run(file *ast.File, fset *token.FileSet, lineLimit, stmtLimit int) []Message {
